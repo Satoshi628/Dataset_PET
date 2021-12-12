@@ -15,4 +15,3 @@ for moto_path, saki_path in zip(moto_paths,saki_paths):
         img = Image.open(os.path.join(moto_path,img_path))
         img = img.resize((128, 128), Image.LANCZOS)
         img.save(os.path.join(saki_path,img_path))
-        input("おわり")
